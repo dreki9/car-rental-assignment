@@ -3,15 +3,75 @@
 
 * {
     font-family: "Montserrat";
-    font-weight: 900;
 }
-.navbar_color {
-    background-color: #142F43;
+/* navbar */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+header {
+
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+header .navbar-brand{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #FFAB4C !important;
+}
+header .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #142F43 !important;
+
+}
+ @media (max-width: 1200px) {
+     header .navbar{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        background: #142F43 !important;
+
+     }
+ }
+ header .navbar .nav-link {
+     padding: 1.7rem 1rem;
     
-}
-.navbar_color li,a {
-    color: #FFAB4C;
-}
+ }
+ header .navbar .dropdown-menu {
+     font-size: 14px;
+     border-radius: 10px;
+     border: none;
+     box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.2);
+     min-width: 13em;
+     margin-top: -10px;
+ }
+ header .navbar .dropdown-menu:before {
+    bottom: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #fff ;
+    border-width: 10px;
+ }
+ header .navbar .dropdown-menu .dropdown-item:hover{
+     background: #142F43;
+     color: #fff;
+ }
+ header .navbar .dropdown-menu .dropdown-item:active{
+     background: #142F43;
+     color: #fff;
+ }
+
 .aboutUs h1{
     margin-top: 2rem;
     margin-left: 45%;
@@ -75,4 +135,3 @@
     border-color: #fff;
     color: #000;
 }
-
