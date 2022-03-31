@@ -51,7 +51,7 @@ header .navbar {
      min-width: 13em;
      margin-top: -10px;
  }
- header .navbar .dropdown-menu:before {
+ header .navbar .dropdown-menu::before {
     bottom: 100%;
     left: 10%;
     border: solid transparent;
@@ -134,4 +134,122 @@ header .navbar {
     background: #fff;
     border-color: #fff;
     color: #000;
+}
+
+/* main page */
+.main-page {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url('../images/bsp9-1170x700.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 100px;
+    
+    
+}
+.text h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.text span {
+    color: #FFAB4C;
+}
+.text p {
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 100px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.input-box {
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+
+}
+.form-container form .btn {
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #142F43;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.form-container .btn:hover {
+    background: #FFAB4C;
+}
+.heading {
+    text-align: center;
+}
+.heading span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.heading h1 {
+    font-size: 2rem;
+}
+
+.how {
+    margin-top: 2rem;
+}
+.how-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.how-container .how-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.how-container .how-box .bi {
+    font-size: 34px;
+    padding: 10px;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    color: #FFAB4C;
+}
+.how-container .how-box h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.4rem 0 0.5rem;
+
+}
+.how-container .how-box .bi:hover, .how-container .bi {
+    background: #FFAB4C;
+    color: #fff;
 }
