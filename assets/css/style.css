@@ -71,18 +71,6 @@ header .navbar {
      background: #142F43;
      color: #fff;
  }
-
-.aboutUs h1{
-    margin-top: 2rem;
-    margin-left: 45%;
-    font-weight: bolder;
-}
-
-.aboutUs :not(h1) {
-    padding: 50px;
-    margin: 1.5rem 4.5rem;
-}
-
 /* Footer css */
 .site-footer {
 
@@ -281,6 +269,7 @@ header .navbar {
 .fleet-container .fleet-box h3 {
     font-size: 1.1rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .box-img {
@@ -346,11 +335,114 @@ header .navbar {
     color: #FFAB4C;
 }
 
+/* about us */
+
+.about-us {
+    height: auto;
+    width: 100%;
+    background: #eeeff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us img {
+    width: 50%;
+    height: auto;
+}
+
+.about-us .about-us-container {
+    width: 1290px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    margin: 10rem 0 10rem;
+}
+.about-text {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+    height: auto;
+}
+.about-us-container{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+.about-text h4 {
+    font-size: 25px;
+    color: #FFAB4C;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.about-text h1{
+    font-size: 56px;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #777;
+    line-height: 20px;
+    margin-bottom: 30px;
+    height: auto;
+}
+.about-us .btn button{
+    background: white;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0, 0, 0 / 6%);
+    
+    
+
+}
+.about-us .btn button:hover {
+    background-color: #142F43;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.about-us .btn .btn2 {
+    background:#FFAB4C;
+    color: white;
+}
 /* responsive */
 @media (max-width: 991px) {
     section {
         padding: 50px 40px;
     }
+    .fleet {
+        padding: 0 10px;
+    }
+    .about-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .about-us img {
+        width: 260px;
+        height: auto;
+    }
+    .about-us .btn2 {
+        margin-top: 15px;
+    }
+
 }
 
 @media (max-width: 881px) {
@@ -380,13 +472,14 @@ header .navbar {
     .heading h1{
         font-size: 1.3rem;
     }
-    
+    .about-text h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 350px) {
-    section {
-        padding: 50px 14px;
-    }
+    
     .text h1 {
         font-size: 2rem;
     }
@@ -395,5 +488,9 @@ header .navbar {
     }
     .fleet-container {
         grid-template-columns: repeat(auto-fit, minmax(254px, auto));
+    }
+    .fleet-box {
+        width: 100%;
+        height: auto;
     }
 }
