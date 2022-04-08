@@ -188,6 +188,7 @@ header .navbar {
     font-size: 1rem;
     font-weight: 500;
 }
+
 .form-container .btn:hover {
     background: #FFAB4C;
 }
@@ -424,9 +425,45 @@ header .navbar {
     color: white;
 }
 
+/* booking */
+
+.form-booking form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position:sticky;
+    bottom: 4rem;
+    left: 100px;
+    background: #FFAB4C;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.form-booking form .btn {
+    flex: 1 1 7rem;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #142F43;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.form-booking .btn:hover {
+    background: #FFAB4C;
+}
+.booking .book-now {
+    background-color: #142F43;
+    border: none;
+    color: #fff;
+}
+.booking .book-now:hover {
+    background-color: #FFAB4C;
+}
+
 /* responsive */
 @media (max-width: 991px) {
-    section {
+    .form-container {
         padding: 50px 40px;
     }
     .fleet {
@@ -442,6 +479,9 @@ header .navbar {
     }
     .about-us .btn2 {
         margin-top: 15px;
+    }
+    .card {
+        width: 18rem !important;
     }
 
 }
@@ -477,9 +517,27 @@ header .navbar {
         font-size: 45px;
         margin-bottom: 20px;
     }
+    .fleet-box {
+        width: 100%;
+        height: auto;
+    }
+    
 }
-
-@media (max-width: 350px) {
+ 
+@media (max-width: 562px){
+    .testimonials-container {
+        grid-template-columns: repeat(auto-fit, minmax(152px, auto));
+        
+    }
+    .fleet-container {
+        grid-template-columns: repeat(auto-fit, minmax(254px, auto));
+    }
+    
+    .about-text h1 {
+        font-size: 37px;
+    }
+}
+@media (max-width: 376px) {
     
     .text h1 {
         font-size: 2rem;
@@ -490,8 +548,7 @@ header .navbar {
     .fleet-container {
         grid-template-columns: repeat(auto-fit, minmax(254px, auto));
     }
-    .fleet-box {
-        width: 100%;
-        height: auto;
+    .about-text h1 {
+        font-size: 37px;
     }
 }
