@@ -460,7 +460,66 @@ header .navbar {
 .booking .book-now:hover {
     background-color: #FFAB4C;
 }
+/* contact us */
+.contact-us .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .contact-us .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
 
+  .contact-us input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .contact-us input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .contact-us .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  
+  .contact-us .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  
+  .contact-us .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  
 /* responsive */
 @media (max-width: 991px) {
     .form-container {
@@ -523,6 +582,12 @@ header .navbar {
     }
     
 }
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  } 
  
 @media (max-width: 562px){
     .testimonials-container {
