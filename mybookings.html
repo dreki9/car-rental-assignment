@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <!-- Navbar section -->
+  <header role="banner">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-rgb(20, 47, 67) navbar_color">
+      <div class="container">
+        <a class="navbar-brand" href="mainpage.html">RENT WITH EMRE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto pl-lg-5 pl-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fleet">Fleet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how">Reservation</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#about-us">About Us</a></li>
+                <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mybookings.html">My Bookings</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mainpage.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- bookings table -->
+
+  <div class="container mt-5">
+    <h4 class="mt-3 mb-3" style="font-weight: bold; font-size: 25px;">My Bookings</h4>
+
+    <div class="book-table">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">carID</th>
+                <th scope="col">totalPrice</th>
+                <th scope="col">Status</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-success">
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>08.04.2022 - 11.04.2022</td>
+                <td>2546f</td>
+                <td>$346</td>
+                <td>On going</td>
+
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">2</th>
+                <td>John Doe</td>
+                <td>08.04.2022 - 11.04.2022</td>
+                <td>2546f</td>
+                <td>$346</td>
+                <td>Ended</td>
+
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">3</th>
+                <td>John Doe</td>
+                <td>08.04.2022 - 11.04.2022</td>
+                <td>2546f</td>
+                <td>$346</td>
+                <td>Ended</td>
+
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+</div>
+  <!-- Footer section -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-3 mb-5">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium voluptatibus ex repellendus laborum,
+            necessitatibus nam ullam, culpa similique distinctio consectetur, quia nobis.</p>
+          <p><a href="#about-us">Learn more...</a></p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h2>Contact &amp; Address</h2>
+          <ul class="list-unstyled footer-link">
+            <li class="d-flex">
+              <span class="me-3">Address: </span><span class="text-white">Pınarbaşı, Akdeniz Ünv., 07070
+                Konyaaltı/Antalya</span>
+            </li>
+            <li>
+              <span class="me-3">Telephone: </span><span class="text-white">+90 555 555 55 55</span>
+            </li>
+            <li>
+              <span class="me-3">Email: </span><span class="text-white">akdeniz@akdeniz.edu.tr</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h2>Quick Links</h2>
+          <ul class="list-unstyled footer-link">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h2>Social Media</h2>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li><a href=""><i class="bi bi-twitter"></i></a></li>
+            <li><a href=""><i class="bi bi-github"></i></a></li>
+            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-md-center text-left">
+          <p>Created by Hüseyin Emre Üğdül</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+</html>
